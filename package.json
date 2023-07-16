@@ -4,7 +4,7 @@
   "description": "Parse Server Project",
   "main": "index.js",
   "scripts": {
-    "start": "parseserver.js"
+    "start": "node parseserver.js"
   },
   "author": "Your Name",
   "license": "MIT",
