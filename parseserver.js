@@ -23,7 +23,6 @@ const server = new ParseServer({
   liveQuery: {
     classNames: ["Test", "Comments"] 
   },
-  appName: "DovizPanel",
   masterKeyIps: [ "0.0.0.0/0" ],
   collections: ['_Installation'],
   production: false,
