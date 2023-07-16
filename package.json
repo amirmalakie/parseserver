@@ -1,4 +1,13 @@
 {
+  "name": "parseserver",
+  "version": "1.0.0",
+  "description": "Parse Server Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "parseserver.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
