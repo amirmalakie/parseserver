@@ -7,6 +7,7 @@ var ip = process.env.IP;
 var db = process.env.APP_NAME;
 var APP_ID = process.env.APP_ID;
 var MASTERKEY = process.env.MASTERKEY;
+var CLIENT_KEY = process.env.CILENT_KEY;
 
 console.log(ip);
 console.log(db);
@@ -17,8 +18,9 @@ const server = new ParseServer({
   liveQueryServerURL: `http://${ip}:1337/livequery`,
   databaseURI: `mongodb://localhost:27017/${db}`, 
   cloud: './cloud/main.js',
-  appId: `${APP_ID}`,
-  masterKey: `${MASTERKEY}`,
+  appId: APP_ID,
+  masterKey: MASTERKEY,
+  clientKey: CLIENT_KEY, 
   serverURL: `http://${ip}:1337/parse`,  
   liveQuery: {
     classNames: ["Test", "Comments"] 

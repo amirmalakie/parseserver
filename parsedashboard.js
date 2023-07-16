@@ -6,6 +6,7 @@ var ip = process.env.IP;
 var appname = process.env.APP_NAME;
 var APP_ID = process.env.APP_ID;
 var MASTERKEY = process.env.MASTERKEY;
+var CLIENT_KEY = process.env.CILENT_KEY;
 
 var options = { allowInsecureHTTP: true };
 
@@ -13,9 +14,10 @@ const dashboard = new ParseDashboard({
     "apps": [
       {
         "serverURL": `http://${ip}:1337/parse`,
-        "appId": `${APP_ID}`,
-        "masterKey": `${MASTERKEY}`,
-        "appName": `${appname}`,
+        "appId": APP_ID,
+        "masterKey": MASTERKEY,
+        "appName": appname,
+        "clientKey": CLIENT_KEY,
     }
     ],
     "users": [
